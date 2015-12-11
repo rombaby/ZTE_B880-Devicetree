@@ -1,0 +1,69 @@
+#
+# system.prop for ZTE B880(Starting Server)
+#
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+# Disable dirty region for Mali
+debug.hwui.render_dirty_regions=false
+ro.opengles.version=196608
+ro.sf.lcd_density=320
+
+# FM
+fmradio.driver.enable=1
+
+# GPS
+bgw.current3gband=0
+curlockscreen=1
+
+# WIFI
+mediatek.wlan.ctia=0
+wifi.interface=wlan0
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+persist.mtk.wcn.combo.chipid=-1
+mediatek.wlan.chip=CONSYS_MT6735
+mediatek.wlan.module.postfix=_consys_mt6735
+
+# Radio
+persist.radio.multisim.config=dsda
+persist.radio.default.sim=0
+persist.md.perm.checked=to_upgrade
+persist.gemini.sim_num=2
+ro.gemini.smart_sim_switch=false
+
+# Ril
+rild.libpath=mtk-ril.so
+rild.libargs=-d /dev/ttyC0
+
+ril.external.md=1
+ril.specific.sm_cause=0
+ril.current.share_modem=2
+ril.first.md=1
+ril.flightmode.poweroffMD=0
+ril.telephony.mode=0
+ril.radiooff.poweroffMD=0
+ril.current.share_modem=2
+ril.active.md=0
+ril.read.imsi=1
+ro.mtk_rild_read_imsi=1
+ro.gemini.smart_sim_switch=false
+ro.mediatek.gemini_support=true
+
+# Telephony
+ro.telephony.ril_class=MediaTekRIL
+ro.telephony.ril.config=fakeiccid
+ro.telephony.sim.count=2
+ro.mtk_world_phone=1
+ro.mtk_lte_support=1
+
+persist.mtk.aee.aed=on
+service.adb.root=1
+ro.boot.selinux=disable
+ro.zygote.preload.enable=0
+
+
